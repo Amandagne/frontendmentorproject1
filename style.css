@@ -1,81 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 body{
+    font-family: Karla;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: hsl(204, 43%, 93%);
-    font-size: 16px;
-    max-width: 1440px;
-    margin: auto;
 }
 *{
-    font-family: Karla;
+    box-sizing: border-box;
 }
 main{
-    
-    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
     max-width: 50vw;
     border-radius: .5em;
+    box-shadow: 0 0 18px hsla(216, 22%, 67%, 0.333);
 }
-#first-section{
-    background-color: #fff;
+.top-container{
     padding: 40px;
-    width: 90%;
 }
-#first-section h1{
+.top-container h1{
     color:hsl(179, 62%, 43%);
 }
-#first-section #first-paragraph{
+.top-container .first-paragraph{
     color:hsl(71, 73%, 54%);
-    font-weight: 700;
+    font-size: 1.4em;
 }
-#first-section #second-paragraph{
-    max-width: 550px;
-}
-#second-section{
+.left #first-par{
     display: flex;
-    justify-content: space-between;
-    color: hsl(204, 43%, 93%);
-    font-size: .9em;
-    width: 100%;
-}
-#second-section .left{
-    background-color: hsl(179, 62%, 43%);
-    padding: 40px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: start;
+    gap:1em;
+    color:rgba(229, 239, 245, 0.622);
 }
-.left span{
+.left #first-par span{
     font-size: 2em;
+    color: hsl(204, 43%, 93%);
+}
+/* .top-container p{
+    max-width: 80%;
+} */
+.bottom-container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color:hsl(178, 60%, 44%);
+    width: 100%;
     color:hsl(204, 43%, 93%);
 }
-.left a{
+.bottom-container > div{
+    width:50%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    gap:1em;
+    padding: 40px;
+}
+.left a {
     background-color: hsl(71, 73%, 54%);
+    color:hsl(204, 43%, 93%);
     text-align: center;
     padding: 14px;
     border-radius: .4em;
-    color:hsl(204, 43%, 93%);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.3em;
-    box-shadow:0 0 10px hsl(218, 22%, 67%);
 }
-#text-with-span{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    column-gap: 1em;
-    color:hsla(203, 44%, 93%, 0.556);
-}
-#second-section .right{
-    background-color: hsla(179, 62%, 43%, 0.542);
+.right{
     padding: 40px;
-    width: 50%;
+   
+}
+.right p{
+    color:rgba(255, 255, 255, 0.604);
+}
+.bottom-container #bright-blue-bg{
+    background-color:hsl(179, 47%, 52%)  !important;
 }
